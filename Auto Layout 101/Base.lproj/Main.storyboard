@@ -21,18 +21,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22i-en-w2K" userLabel="BottomContainer">
-                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="22i-en-w2K" userLabel="BottomContainer">
+                                <rect key="frame" x="0.0" y="540" width="414" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Auto Layout 101 - We ❤ Swift" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Dg1-Ba-753" userLabel="TitleLabel">
-                                        <rect key="frame" x="14" y="14" width="369.5" height="33.5"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto Layout 101 - We ❤ Swift" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Dg1-Ba-753" userLabel="TitleLabel">
+                                        <rect key="frame" x="-8.5" y="14" width="431" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.88321474357295704" green="0.8866600537799163" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Dg1-Ba-753" firstAttribute="centerX" secondItem="22i-en-w2K" secondAttribute="centerX" id="4X3-Jg-zwW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dg1-Ba-753" secondAttribute="trailing" constant="-8.5" id="Ci0-4p-oYJ"/>
+                                    <constraint firstItem="Dg1-Ba-753" firstAttribute="top" secondItem="22i-en-w2K" secondAttribute="top" constant="14" id="xit-3h-6dx"/>
+                                </constraints>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2F-mh-jwf">
                                 <rect key="frame" x="191" y="270" width="71" height="60"/>
@@ -55,15 +59,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="22i-en-w2K" secondAttribute="trailing" constant="-186" id="2Wc-kv-1gN"/>
-                            <constraint firstItem="22i-en-w2K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GYF-rv-UMD"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="22i-en-w2K" secondAttribute="bottom" constant="262" id="I85-38-RvN"/>
-                            <constraint firstItem="22i-en-w2K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Usa-NZ-7qe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="22i-en-w2K" secondAttribute="trailing" constant="-206" id="gZI-jR-sE6"/>
-                            <constraint firstItem="22i-en-w2K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gwX-Z8-DEs"/>
-                            <constraint firstItem="22i-en-w2K" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="540" id="hry-wz-Iqw"/>
-                            <constraint firstItem="22i-en-w2K" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="540" id="n5k-R4-ZMy"/>
-                            <constraint firstAttribute="bottom" secondItem="22i-en-w2K" secondAttribute="bottom" constant="296" id="qHi-bf-yjJ"/>
+                            <constraint firstAttribute="trailing" secondItem="22i-en-w2K" secondAttribute="trailing" id="0Vy-xm-11G"/>
+                            <constraint firstItem="22i-en-w2K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e9c-ks-3br"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="22i-en-w2K" secondAttribute="bottom" id="mie-9Q-oEg"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -84,14 +82,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUI-Vf-iQ6">
-                                <rect key="frame" x="60" y="0.0" width="350" height="903"/>
+                                <rect key="frame" x="4" y="0.0" width="406" height="903"/>
                                 <color key="backgroundColor" red="1" green="0.024170271515557173" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="PUI-Vf-iQ6" secondAttribute="bottom" constant="-7" id="G6x-LW-SvK"/>
-                            <constraint firstItem="PUI-Vf-iQ6" firstAttribute="leading" secondItem="Aur-aK-0wt" secondAttribute="leadingMargin" constant="40" id="UVf-Cw-Fsh"/>
+                            <constraint firstItem="PUI-Vf-iQ6" firstAttribute="leading" secondItem="Aur-aK-0wt" secondAttribute="leadingMargin" constant="-16" id="UVf-Cw-Fsh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PUI-Vf-iQ6" secondAttribute="trailing" constant="-16" id="WJr-Lg-b9k"/>
                             <constraint firstItem="PUI-Vf-iQ6" firstAttribute="top" secondItem="Aur-aK-0wt" secondAttribute="top" id="oIl-ka-5Wf"/>
                         </constraints>

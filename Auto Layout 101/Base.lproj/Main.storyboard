@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6uX-QF-f57">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="22i-en-w2K" userLabel="BottomContainer">
@@ -70,16 +70,21 @@
                         <viewControllerLayoutGuide type="bottom" id="WGH-8z-A19"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Aur-aK-0wt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PUI-Vf-iQ6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="819"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUI-Vf-iQ6">
+                                <rect key="frame" x="4" y="0.0" width="406" height="903"/>
                                 <color key="backgroundColor" red="1" green="0.024170271515557173" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PUI-Vf-iQ6" secondAttribute="bottom" constant="-7" id="G6x-LW-SvK"/>
+                            <constraint firstItem="PUI-Vf-iQ6" firstAttribute="leading" secondItem="Aur-aK-0wt" secondAttribute="leadingMargin" constant="-16" id="UVf-Cw-Fsh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PUI-Vf-iQ6" secondAttribute="trailing" constant="-16" id="WJr-Lg-b9k"/>
+                            <constraint firstItem="PUI-Vf-iQ6" firstAttribute="top" secondItem="Aur-aK-0wt" secondAttribute="top" id="oIl-ka-5Wf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4F-Di-stL" userLabel="First Responder" sceneMemberID="firstResponder"/>
